@@ -48,10 +48,12 @@ body {
   font-weight: 400;
   color: #555;
 }
-.test {
-  background-color: blanchedalmond;
-  max-width: 50rem;
-  color: #555;
-  font-size: 2rem;
-  padding: 4rem;
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.hero-img {
+  width: 100%;
 }
