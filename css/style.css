@@ -15,13 +15,13 @@ Default: 1
 
 - Primary: #e67e22
 
-- Tints
+- Tints #fdf2e9 #f8d8bd #f5cba7
 
-- Shades
+- Shades #cf711f
 
 - Accents
 
-- Grays: #555
+- Grays: #555 #333
 
 --05 SHADOWS
 
@@ -39,21 +39,86 @@ Default: 1
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
 }
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
 }
+
 .hero-img {
   width: 100%;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  transition: all 0.3s linear;
+  color: #000;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: #e67e22;
+  color: #fdf2e9;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #cf711f;
+  color: #fdf2e9;
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  background-color: #f8d8bd;
+  color: #e67e22;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: #f5cba7;
+  color: #e67e22;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
 }
