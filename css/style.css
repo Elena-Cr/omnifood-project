@@ -428,7 +428,7 @@
 /* CTA SECTION */
 /* ************************************* */
 .section-cta {
-  padding: 9.8rem 0;
+  padding: 4.8rem 0 12.8rem 0;
 }
 .cta {
   display: grid;
@@ -507,4 +507,81 @@
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(221, 196, 175, 0.507);
+}
+
+/* ************************************* */
+/* FOOTER */
+/* ************************************* */
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #fdf2e9;
+}
+
+.grid--5--footer {
+  grid-template-columns: 25fr 25fr 17fr 17fr 17fr;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link,
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s linear;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: auto;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+.address {
+  margin-bottom: 2.4rem;
 }
