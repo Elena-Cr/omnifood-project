@@ -212,6 +212,13 @@ body {
   flex-direction: column;
   gap: 1.6rem;
 }
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
 .feature-icon {
   color: #e67e22;
   background-color: #fdf2e9;
