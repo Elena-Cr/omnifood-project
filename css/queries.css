@@ -13,7 +13,6 @@ Insted, 1rem=1em=16px*/
     font-size: 4.4rem;
   }
   .gallery {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -22,7 +21,7 @@ Insted, 1rem=1em=16px*/
 /* ************************************* */
 @media (max-width: 75em) {
   html {
-    font-size: 56.29%;
+    font-size: 56.25%;
   }
   .grid {
     column-gap: 4.8rem;
@@ -55,7 +54,7 @@ Insted, 1rem=1em=16px*/
   html {
     font-size: 50%;
   }
-  .section-hero {
+  */ .section-hero {
     padding: 0;
   }
   .hero {
@@ -63,14 +62,12 @@ Insted, 1rem=1em=16px*/
     padding: 0 8rem;
     gap: 6.4rem;
   }
-  .hero-text-box {
-    text-align: center;
-  }
+  .hero-text-box,
   .hero-img-box {
     text-align: center;
   }
   .hero-img {
-    width: 50%;
+    width: 60%;
     display: none;
   }
   .delivered-meals {
@@ -90,11 +87,10 @@ Insted, 1rem=1em=16px*/
     grid-template-columns: 1fr;
   }
   .gallery {
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
   .cta {
-    grid-template-columns: 60fr 40fr;
+    grid-template-columns: 3fr 2fr;
   }
   .cta-form {
     grid-template-columns: 1fr;
@@ -112,7 +108,7 @@ Insted, 1rem=1em=16px*/
     left: 0;
     width: 100%;
     height: 100vh;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */ /*TODO: solve zoom bug*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,6 +122,9 @@ Insted, 1rem=1em=16px*/
   .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
     font-size: 3rem;
   }
   .nav-open .main-nav {
@@ -142,5 +141,83 @@ Insted, 1rem=1em=16px*/
   }
 }
 /* ************************************* */
-/* Bellow 944px (Mobile) */
+/* Bellow 800px (Small Tablet) */
 /* ************************************* */
+@media (max-width: 50em) {
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+  .grid--5--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+/* ************************************* */
+/* Bellow 550px (Phone) */
+/* ************************************* */
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--2,
+  .grid--3,
+  .grid--4,
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .section-her {
+    padding: 2.4rem 0 2.4rem 0;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .logos img {
+    height: 1.2rem;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .step-img-box {
+    transform: translateY(24px);
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+}
